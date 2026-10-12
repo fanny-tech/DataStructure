@@ -54,7 +54,7 @@
                 addToFront(node);
             } else {
                 if (map.size() >= capacity) {
-                    // Niba ububiko bwuzuye, twirukana (evict) iri ku mpera (kera cyane)
+
                     Node lru = tail.prev;
                     remove(lru);
                     map.remove(lru.key);
@@ -66,7 +66,6 @@
             }
         }
 
-        // --- Ubufasha bwa Doubly Linked List ---
 
         private void remove(Node node) {
             node.prev.next = node.next;

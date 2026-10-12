@@ -53,7 +53,7 @@
 
         public T get(int index) {
             if (index < 0 || index >= size) {
-                throw new IndexOutOfBoundsException("Index iri hanze y'uburebure bwa list!");
+                throw new IndexOutOfBoundsException("Index out of the length list!");
             }
             Node<T> current = head;
             for (int i = 0; i < index; i++) {
